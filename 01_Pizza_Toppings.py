@@ -7,9 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/176BKxKSX9zQegqAufG4wHhCTWN9AFNZR
 """
 
-toppings = "Input 'quit' when you are satisfied with the amount of toppings."
-toppings += "\nWhat pizza toppings would you like on your pizza? "
+age = "\nInput 'quit' when you are done."
+age += "\nWhat is your age? "
 message = " "
-while message != "quit":
-    message = input(toppings)
-    print(message, "will be added to your pizza. ('quit' will not be added to your pizza)\n")
+while message !="quit":
+    message = input(age)
+    if int(message) < 3:
+     print("Your ticket is free")
+    elif int(message) <= 12:
+     print("Your ticket costs 10$")
+    elif int(message) > 12:
+     print("Your ticket costs 15$")
